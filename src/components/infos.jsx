@@ -58,8 +58,8 @@ export default function Infos() {
           <p className="font-light text-base text-slate-600">
             Placa gráfica de última geração com Nvidia GTX, RTX da série 4000. O
             melhor desempenho para aplicações profissionais com linha Nvidia
-            Quadro. GPU's de alta performance para co-processamento com Nvidia
-            Tesla e NVidia Volta.
+            Quadro. GPU&apos;s de alta performance para co-processamento com
+            Nvidia Tesla e NVidia Volta.
           </p>
         </div>
       </div>
