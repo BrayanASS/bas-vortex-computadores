@@ -46,12 +46,19 @@ export default function Computers() {
       <div className="flex flex-row items-center justify-center gap-20 max-[850px]:flex-col">
         {pcs.map((pc) => {
           return (
-            <div className="flex flex-col items-center justify-center ">
+            <div
+              className="flex flex-col items-center justify-center "
+              key={pc.id}
+            >
               <h1 className="text-3xl font-['Roboto'] font-bold tracking-wide text-[#F74D4D]">
                 {pc.nome}
               </h1>
               <div className="flex flex-col items-center justify-center shadow-inner px-5 py-10 rounded-[15px] mt-5 gap-5 bg-slate-50">
-                <Image src={pc.image} width={300} />
+                <Image
+                  src={pc.image}
+                  width={300}
+                  alt="pcex vortex computadores"
+                />
                 <div className="flex flex-col gap-3 items-start mt-5">
                   <div className="flex flex-row items-center justify-center gap-4">
                     <Icon

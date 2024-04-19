@@ -9,7 +9,11 @@ export default function Infos() {
   return (
     <div className="flex flex-col gap-[4rem] max-[700px]:gap-[3rem] px-[18rem] my-[5rem] max-[1800px]:px-[12rem] max-[1500px]:px-[6rem] max-[700px]:px-[3rem] ">
       <div className="flex flex-row gap-[5rem] max-[700px]:gap-[2rem] items-center max-[1000px]:flex-col ">
-        <Image src={img1} className="w-[45%] max-[1000px]:w-[75%]" />
+        <Image
+          src={img1}
+          className="w-[45%] max-[1000px]:w-[75%]"
+          alt="pcex1 vortex computadores"
+        />
         <div className="flex flex-col gap-5 max-[700px]:gap-2 items-start justify-center w-[100%]">
           <h1 className="font-extrabold text-5xl text-[#161C2D] tracking-wide max-[650px]:text-4xl">
             Processador <span className="text-[#e08a8a]">workaholic</span>
@@ -23,7 +27,11 @@ export default function Infos() {
         </div>
       </div>
       <div className="flex flex-row-reverse gap-[5rem] max-[700px]:gap-[2rem] items-center max-[1000px]:flex-col ">
-        <Image src={img2} className="w-[45%] max-[1000px]:w-[75%]" />
+        <Image
+          src={img2}
+          className="w-[45%] max-[1000px]:w-[75%]"
+          alt="pcex2 vortex computadores"
+        />
         <div className="flex flex-col gap-5 max-[700px]:gap-2 items-start justify-center w-[100%]">
           <h1 className="font-extrabold text-5xl text-[#161C2D] tracking-wide max-[650px]:text-4xl">
             <span className="text-[#e08a8a]">Potencialize o desempenho</span> do
@@ -37,7 +45,11 @@ export default function Infos() {
         </div>
       </div>
       <div className="flex flex-row gap-[5rem] max-[700px]:gap-[2rem] items-center max-[1000px]:flex-col ">
-        <Image src={img4} className="w-[45%] max-[1000px]:w-[75%]" />
+        <Image
+          src={img4}
+          className="w-[45%] max-[1000px]:w-[75%]"
+          alt="pcex3 vortex computadores"
+        />
         <div className="flex flex-col gap-5 max-[700px]:gap-2 items-start justify-center w-[100%]">
           <h1 className="font-extrabold text-5xl text-[#161C2D] tracking-wide max-[650px]:text-4xl">
             Chip gráfico que{" "}
@@ -52,7 +64,11 @@ export default function Infos() {
         </div>
       </div>
       <div className="flex flex-row-reverse gap-[5rem] max-[700px]:gap-[2rem] items-center max-[1000px]:flex-col ">
-        <Image src={img3} className="w-[45%] max-[1000px]:w-[75%]" />
+        <Image
+          src={img3}
+          className="w-[45%] max-[1000px]:w-[75%]"
+          alt="pcex4 vortex computadores"
+        />
         <div className="flex flex-col gap-5 max-[700px]:gap-2 items-start justify-center w-[100%]">
           <h1 className="font-extrabold text-5xl text-[#161C2D] tracking-wide max-[650px]:text-4xl">
             <span className="text-[#e08a8a]">Faça mais</span> em menos tempo

@@ -12,7 +12,7 @@ export default function Certificates() {
     <div className="flex flex-row gap-[7rem] px-[18rem] py-[3rem] mt-[5rem]  max-[1500px]:px-[6rem] max-[700px]:px-[3rem] items-center bg-[url('../../public/background.png')] max-[1000px]:flex-col max-[700px]:gap-[2rem]">
       <div className="flex flex-col gap-5 max-[700px]:gap-[2rem] ">
         <div className="flex flex-row items-center gap-5 max-[700px]:flex-col max-[700px]:items-start">
-          <Image src={logo} className="" />
+          <Image src={logo} alt="certificate vortex computadores" />
           <div>
             <h1 className="font-extrabold text-3xl text-slate-50 tracking-wide">
               Certificados por quem entende do assunto
@@ -36,7 +36,11 @@ export default function Certificates() {
           </DialogContent>
         </Dialog>
       </div>
-      <Image src={pcInfo} className="w-[130rem]" />
+      <Image
+        src={pcInfo}
+        alt="pc2 vortex computadores"
+        className="w-[130rem]"
+      />
     </div>
   );
 }

@@ -3,18 +3,7 @@ import Image from "next/image";
 import logo from "../../public/logo.png";
 import pcBanner from "../../public/pcBannerFixed.png";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-  DialogFooter,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 export default function Banner() {
   return (
@@ -58,6 +47,7 @@ export default function Banner() {
           <Image
             src={pcBanner}
             className="w-[40rem] max-[1280px]:w-[30rem] max-[940px]:w-[25rem] max-[940px]:pb-[2rem]"
+            alt="pc vortex computadores"
             priority
           />
         </section>

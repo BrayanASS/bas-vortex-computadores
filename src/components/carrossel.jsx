@@ -28,22 +28,22 @@ export default function Carrossel() {
       >
         <CarouselContent className="flex">
           <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
-            <Image src={coment1} />
+            <Image src={coment1} alt="coment1 vortex computadores" />
           </CarouselItem>
           <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
-            <Image src={coment2} />
+            <Image src={coment2} alt="coment2 vortex computadores" />
           </CarouselItem>
           <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
-            <Image src={coment3} />
+            <Image src={coment3} alt="coment3 vortex computadores" />
           </CarouselItem>
           <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
-            <Image src={coment4} />
+            <Image src={coment4} alt="coment4 vortex computadores" />
           </CarouselItem>
           <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
-            <Image src={coment1} />
+            <Image src={coment1} alt="coment5 vortex computadores" />
           </CarouselItem>
           <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
-            <Image src={coment2} />
+            <Image src={coment2} alt="coment6 vortex computadores" />
           </CarouselItem>
         </CarouselContent>
         <CarouselPrevious className="max-[770px]:hidden" />
