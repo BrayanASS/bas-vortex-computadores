@@ -17,37 +17,37 @@ import coment4 from "../../public/coment4.png";
 
 export default function Carrossel() {
   return (
-    <div className="flex overflow-x-hidden flex-col font-['Gilroy'] w-full items-center">
+    <div className="flex overflow-x-hidden flex-col font-['Gilroy'] w-full items-center bg-slate-50 ">
       <Carousel
-        className="flex mt-[5rem] p-10 w-[70%]"
+        className="flex my-[5rem] px-10 w-[70%] max-[1100px]:w-[85%] max-[770px]:h-[100%] max-[770px]:my-[0rem] max-[770px]:px-[0rem]"
         plugins={[
           Autoplay({
             delay: 3000,
           }),
         ]}
       >
-        <CarouselContent className="ml-[10px]">
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+        <CarouselContent className="flex">
+          <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
             <Image src={coment1} />
           </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
+          <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
             <Image src={coment2} />
           </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
             <Image src={coment3} />
           </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
+          <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
             <Image src={coment4} />
           </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3 ">
+          <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
             <Image src={coment1} />
           </CarouselItem>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem className="max-[770px]:basis-1/2 max-[2000px]:basis-1/3 flex items-center">
             <Image src={coment2} />
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="max-[770px]:hidden" />
+        <CarouselNext className="max-[770px]:hidden" />
       </Carousel>
     </div>
   );

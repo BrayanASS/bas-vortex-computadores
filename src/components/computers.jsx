@@ -1,6 +1,8 @@
 import "../app/globals.css";
 import Image from "next/image";
-import Banner from "@/components/banner";
+
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+
 import warrior from "../../public/warrior.png";
 import titan from "../../public/titan.png";
 import berserker from "../../public/berserker.png";
@@ -40,15 +42,15 @@ export default function Computers() {
     },
   ];
   return (
-    <div className="flex flex-col gap-10 items-center mt-[5rem] ">
-      <div className="flex flex-row items-center justify-center gap-20 ">
+    <div className="flex flex-col gap-10 items-center mt-[5rem] mb-[5rem]">
+      <div className="flex flex-row items-center justify-center gap-20 max-[850px]:flex-col">
         {pcs.map((pc) => {
           return (
             <div className="flex flex-col items-center justify-center ">
-              <h1 className="text-2xl font-['Roboto'] font-bold tracking-wide text-[#F74D4D]">
+              <h1 className="text-3xl font-['Roboto'] font-bold tracking-wide text-[#F74D4D]">
                 {pc.nome}
               </h1>
-              <div className="flex flex-col items-center justify-center shadow-inner p-5 rounded-[15px] mt-5 gap-5 bg-slate-100">
+              <div className="flex flex-col items-center justify-center shadow-inner px-5 py-10 rounded-[15px] mt-5 gap-5 bg-slate-50">
                 <Image src={pc.image} width={300} />
                 <div className="flex flex-col gap-3 items-start mt-5">
                   <div className="flex flex-row items-center justify-center gap-4">
@@ -92,9 +94,16 @@ export default function Computers() {
           );
         })}
       </div>
-      <button className="text-slate-100 bg-[#F74D4D] py-2 px-12 rounded-[8px]  font-regular w-fit tracking-widest">
-        Fazer Orçamento
-      </button>
+      <Dialog>
+        <DialogTrigger asChild>
+          <button className="text-slate-100 bg-[#F74D4D] py-2 px-12 rounded-[8px]  font-regular w-fit tracking-widest">
+            Fazer Orçamento
+          </button>
+        </DialogTrigger>
+        <DialogContent className="sm:max-w-[425px] items-center text-slate-50 ">
+          <h1 className="text-slate-50 ">BOTÃO MERAMENTE ILUSTRATIVO</h1>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
