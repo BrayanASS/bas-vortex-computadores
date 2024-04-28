@@ -7,8 +7,8 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 export default function Banner() {
   return (
-    <div className="flex w-screen bg-[url('../../public/background.png')] mb-5 font-montserrat">
-      <div className="flex align-middle  w-screen h-screen flex-col max-[1024px]:h-auto ">
+    <div className="flex w-screen  mb-5 font-montserrat">
+      <div className="flex align-middle  w-screen h-screen flex-col max-[1024px]:h-auto bg-[url('../../public/background.png')] ">
         <nav className="flex align-start justify-items-start  w-screen p-8">
           <Image
             src={logo}
