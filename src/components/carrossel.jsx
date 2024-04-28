@@ -17,7 +17,7 @@ import coment4 from "../../public/coment4.png";
 
 export default function Carrossel() {
   return (
-    <div className="flex overflow-x-hidden flex-col font-montserrat w-full items-center bg-slate-50 ">
+    <div className="flex overflow-x-hidden flex-col font-montserrat w-full items-center bg-slate-100 ">
       <Carousel
         className="flex my-[5rem] px-10 w-[70%] max-[1100px]:w-[85%] max-[770px]:h-[100%] max-[770px]:my-[0rem] max-[770px]:px-[0rem]"
         plugins={[

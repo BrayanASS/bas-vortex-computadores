@@ -19,14 +19,14 @@ export default function Home() {
       <Head>
         <title>Vortex Computadores</title>
       </Head>
-      <div className="flex overflow-x-hidden flex-col font-montserrat w-full items-center">
+      <div className="flex overflow-x-hidden flex-col font-montserrat w-full items-center bg-[#FDFDFF]">
         <Banner></Banner>
         <Image src={clouds} className="max-[850px]:hidden" />
         <Computers></Computers>
         <Carrossel></Carrossel>
         <Infos></Infos>
         <Certificates></Certificates>
-        <div className="flex flex-col w-full px-[18rem] items-center py-[7rem] justify-center gap-4 max-[974px]:px-[2rem] max-[680px]:py-[5rem]">
+        <div className="flex flex-col w-full px-[18rem] items-center py-[3rem] justify-center gap-4 max-[974px]:px-[2rem] max-[680px]:py-[5rem]">
           <h1 className="text-4xl text-[#5F2AB9] font-extrabold tracking-wide max-[400px]:text-base">
             VORTEX{" "}
             <span className="text-[#F74D4D] text-3xl text-center">
