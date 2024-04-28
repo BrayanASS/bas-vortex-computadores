@@ -42,7 +42,7 @@ export default function Computers() {
     },
   ];
   return (
-    <div className="flex flex-col gap-10 items-center mt-[5rem] mb-[5rem]">
+    <div className="flex flex-col gap-10 items-center mt-[5rem] mb-[5rem] font-montserrat">
       <div className="flex flex-row items-center justify-center gap-20 max-[850px]:flex-col">
         {pcs.map((pc) => {
           return (
@@ -50,7 +50,7 @@ export default function Computers() {
               className="flex flex-col items-center justify-center "
               key={pc.id}
             >
-              <h1 className="text-3xl font-['Roboto'] font-bold tracking-wide text-[#F74D4D]">
+              <h1 className="text-3xl font-montserrat font-bold tracking-wide text-[#F74D4D]">
                 {pc.nome}
               </h1>
               <div className="flex flex-col items-center justify-center shadow-inner px-5 py-10 rounded-[15px] mt-5 gap-5 bg-slate-50">
@@ -90,7 +90,7 @@ export default function Computers() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col items-center mt-5 font-['Roboto']">
+              <div className="flex flex-col items-center mt-5 font-montserrat">
                 <p className="font-light">A partir de</p>
                 <p className="font-bold text-3xl text-slate-500">
                   R$ {pc.value}

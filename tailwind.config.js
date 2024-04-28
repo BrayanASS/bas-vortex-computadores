@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   prefix: "",
   theme: {
+    fontFamily: {
+      montserrat: ["Montserrat"],
+    },
     container: {
       center: true,
       padding: "2rem",

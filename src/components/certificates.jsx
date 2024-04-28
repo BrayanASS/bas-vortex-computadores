@@ -9,7 +9,7 @@ import pcInfo from "../../public/pcInfo.png";
 
 export default function Certificates() {
   return (
-    <div className="flex flex-row gap-[7rem] px-[18rem] py-[3rem] mt-[5rem]  max-[1500px]:px-[6rem] max-[700px]:px-[3rem] items-center bg-[url('../../public/background.png')] max-[1000px]:flex-col max-[700px]:gap-[2rem]">
+    <div className="flex flex-row gap-[7rem] px-[18rem] py-[3rem] mt-[5rem]  max-[1500px]:px-[6rem] max-[700px]:px-[3rem] items-center bg-[url('../../public/background.png')] max-[1000px]:flex-col max-[700px]:gap-[2rem] font-montserrat">
       <div className="flex flex-col gap-5 max-[700px]:gap-[2rem] ">
         <div className="flex flex-row items-center gap-5 max-[700px]:flex-col max-[700px]:items-start">
           <Image src={logo} alt="certificate vortex computadores" />
