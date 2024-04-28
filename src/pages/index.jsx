@@ -5,7 +5,7 @@ import Head from "next/head";
 
 import { Icon } from "@iconify/react";
 
-import Banner from "@/components/banner";
+import Banner from "@/components/Banner.1";
 import Computers from "@/components/computers";
 import Carrossel from "@/components/carrossel";
 import Infos from "@/components/infos";
