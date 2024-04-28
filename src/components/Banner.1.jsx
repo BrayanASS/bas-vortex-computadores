@@ -2,17 +2,21 @@ import Image from "next/image";
 import logo from "../../public/logo.png";
 import pcBanner from "../../public/pcBannerFixed.png";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import Link from "next/link";
 
 export default function Banner() {
   return (
     <div className="flex w-screen  mb-5 font-montserrat">
       <div className="flex items-center  w-screen h-screen flex-col max-[1024px]:h-auto bg-[url('/background.png')] ">
-        <nav className="flex align-start justify-items-start  w-screen p-8">
-          <Image
-            src={logo}
-            alt="logo vortex computadores"
-            className="w-12 h-12  "
-          />
+        <nav className="flex align-start justify-items-start  w-screen p-8 fixed max-[1024px]:relative">
+          <Link href={"/"}>
+            <Image
+              src={logo}
+              alt="logo vortex computadores"
+              classN
+              className="w-14 h-14"
+            />
+          </Link>
         </nav>
         <section className="flex flex-row justify-center items-center self-center max-[1024px]:flex-col max-[1024px]:gap-10 h-[100%]">
           <div className="w-[40%] max-[1024px]:w-full max-[1024px]:px-[5rem] max-[700px]:px-[3rem] flex gap-6 flex-col">
@@ -22,7 +26,7 @@ export default function Banner() {
             <p className="text-slate-100 font-light text-3xl w-[75%] tracking-wider max-[650px]:text-2xl">
               Computadores para profissionais{" "}
               <label className=" font-extrabold tracking-wider">
-                incríveis
+                incríveis{" "}
               </label>
               alcançarem o
               <label className=" font-extrabold tracking-wider">
