@@ -6,7 +6,7 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 export default function Banner() {
   return (
     <div className="flex w-screen  mb-5 font-montserrat">
-      <div className="flex align-middle  w-screen h-screen flex-col max-[1024px]:h-auto bg-[url('../../public/background.png')] ">
+      <div className="flex items-center  w-screen h-screen flex-col max-[1024px]:h-auto bg-[url('../../public/background.png')] ">
         <nav className="flex align-start justify-items-start  w-screen p-8">
           <Image
             src={logo}
@@ -14,7 +14,7 @@ export default function Banner() {
             className="w-12 h-12  "
           />
         </nav>
-        <section className="flex flex-row justify-center items-center self-center max-[1024px]:flex-col max-[1024px]:gap-10 align-middle">
+        <section className="flex flex-row justify-center items-center self-center max-[1024px]:flex-col max-[1024px]:gap-10 ">
           <div className="w-[40%] max-[1024px]:w-full max-[1024px]:px-[5rem] max-[700px]:px-[3rem] flex gap-6 flex-col">
             <p className="text-slate-100 font-extrabold text-5xl max-[650px]:text-4xl ">
               Vortex Computadores
